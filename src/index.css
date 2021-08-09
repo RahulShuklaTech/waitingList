@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Padauk', sans-serif;
+}
+
+
+.sign-in-container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #E8E7FD;
+    flex-direction: column;
+    gap: 20px;
+}
+
+button {
+    padding: 5px 15px;
+    color: white;
+    background-color: black;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.nav{
+    width: 100%;
+    min-height: 10vh;
+    max-height: max-content;
+    background-color: #A167A5;
+    padding: 5px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+img {
+    border-radius: 50%;
+    width: 4rem;
+    border: 2px solid white;
+}
+
+.right-top {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.chatrooms{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    gap: 5rem;
+}
+
+.chat-rooms-container{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: center;
+
+}
+
+.header {
+    text-align: center;
+    padding: 2rem 0;
+    background-color: #4A306D ;
+    color: white;
+
+}
+
+
+.roomContainer {
+    display: flex;
+    flex-direction: column;
+    margin: .5rem auto;
+    line-height: 3rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    background-color: #E8D7F1;
+    
+    
+}
+
+
+input {
+    width: 80%;
+    line-height: 3rem;
+    padding: 5px;
+    font-size: 2rem;
+}
+
+
+.add-room button{
+    width: 20%;
+    background-color: cornflowerblue;
+    line-height: 3rem;
+    font-size: 2rem;
+    padding: 5px;
+}
