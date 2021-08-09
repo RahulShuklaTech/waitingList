@@ -17,7 +17,9 @@ export default function SignInPage() {
         firebase.database().ref('users/' + userId).set({
           username: name,
           email: email,
-          profile_picture : imageUrl
+          profile_picture : imageUrl,
+          timeStamp: Date.now()
+          
           
         });
     }

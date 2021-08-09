@@ -28,7 +28,7 @@ export const gotUsers = (data) => ({
 export const getWaitList = (userid) => {
     return async (dispatch) => { 
         try {
-           const userList = await database.ref('users/').once('value'); 
+           const userList = await database.ref('users/').orderByChild('timeStamp').once('value'); 
            const user = Object.values(userList.val());
            dispatch(gotUsers(user));
            console.log(user)
