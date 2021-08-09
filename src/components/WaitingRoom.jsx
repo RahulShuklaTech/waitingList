@@ -18,8 +18,9 @@ export default function WaitingRoom() {
         dispatch(getWaitList())
     // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
-
-    const queueNumber  = users.findIndex((user => user.username === displayName))      
+    const localSort = users.sort((a,b) => a.timeStamp - b.timeStamp);
+   
+    const queueNumber  = localSort.findIndex((user => user.username === displayName))      
 
     return (
         <div className="chatrooms">
