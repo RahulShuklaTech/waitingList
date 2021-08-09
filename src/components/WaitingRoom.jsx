@@ -1,7 +1,7 @@
-import React, { useEffect, useRef } from 'react'
+import React, { useEffect} from 'react'
 import Nav from './Nav'
 import { useDispatch, useSelector } from 'react-redux';
-import { addRoomToDB, getRoomsFromDB, getWaitList } from '../redux/action';
+import { getWaitList } from '../redux/action';
 
 
 
@@ -29,10 +29,7 @@ export default function WaitingRoom() {
                 <div className="chatrooms-menu">
                     <h2>Hi {displayName},</h2>
                     <h3>Your queue number is {queueNumber+1} of {users.length}</h3>
-
-            
                 </div>
-                
             </div>
         </div>
     )
