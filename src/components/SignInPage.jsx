@@ -18,7 +18,7 @@ export default function SignInPage() {
           username: name,
           email: email,
           profile_picture : imageUrl,
-          timeStamp: Date.now()
+          timeStamp: firebase.database.ServerValue.TIMESTAMP
           
           
         });
